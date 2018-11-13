@@ -13,6 +13,8 @@
 		2F01F970219A742B0072EDB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F01F96F219A742B0072EDB7 /* Assets.xcassets */; };
 		2F01F973219A742B0072EDB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01F971219A742B0072EDB7 /* LaunchScreen.storyboard */; };
 		2F01F97E219A742B0072EDB7 /* PTVHealthCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01F97D219A742B0072EDB7 /* PTVHealthCheckTests.swift */; };
+		504FF0495D121F634295B5AF /* Pods_PTVHealthCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D915BBBAB02C9C803032193 /* Pods_PTVHealthCheck.framework */; };
+		5F13CF4100756E3D3D283463 /* Pods_PTVHealthCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651F26A4003D4EDFC70CAB6 /* Pods_PTVHealthCheckTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0651F26A4003D4EDFC70CAB6 /* Pods_PTVHealthCheckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTVHealthCheckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D915BBBAB02C9C803032193 /* Pods_PTVHealthCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTVHealthCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F01F965219A742A0072EDB7 /* PTVHealthCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTVHealthCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F01F968219A742A0072EDB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F01F96A219A742A0072EDB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		2F01F979219A742B0072EDB7 /* PTVHealthCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTVHealthCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F01F97D219A742B0072EDB7 /* PTVHealthCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTVHealthCheckTests.swift; sourceTree = "<group>"; };
 		2F01F97F219A742B0072EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9CDC081022621BA50F1FC6 /* Pods-PTVHealthCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheck/Pods-PTVHealthCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		7751D1678E3DD385D619EB64 /* Pods-PTVHealthCheckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheckTests/Pods-PTVHealthCheckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC80538BC9B8D3E88485DF95 /* Pods-PTVHealthCheckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheckTests/Pods-PTVHealthCheckTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7362C263828BB9683AC33F9 /* Pods-PTVHealthCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheck/Pods-PTVHealthCheck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504FF0495D121F634295B5AF /* Pods_PTVHealthCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F13CF4100756E3D3D283463 /* Pods_PTVHealthCheckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099E5E8F9031E467AA826C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D915BBBAB02C9C803032193 /* Pods_PTVHealthCheck.framework */,
+				0651F26A4003D4EDFC70CAB6 /* Pods_PTVHealthCheckTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F01F95C219A742A0072EDB7 = {
 			isa = PBXGroup;
 			children = (
 				2F01F967219A742A0072EDB7 /* PTVHealthCheck */,
 				2F01F97C219A742B0072EDB7 /* PTVHealthCheckTests */,
 				2F01F966219A742A0072EDB7 /* Products */,
+				37FFAFAF458CD4C49853E551 /* Pods */,
+				099E5E8F9031E467AA826C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = PTVHealthCheckTests;
 			sourceTree = "<group>";
 		};
+		37FFAFAF458CD4C49853E551 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C9CDC081022621BA50F1FC6 /* Pods-PTVHealthCheck.debug.xcconfig */,
+				E7362C263828BB9683AC33F9 /* Pods-PTVHealthCheck.release.xcconfig */,
+				7751D1678E3DD385D619EB64 /* Pods-PTVHealthCheckTests.debug.xcconfig */,
+				BC80538BC9B8D3E88485DF95 /* Pods-PTVHealthCheckTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F01F982219A742B0072EDB7 /* Build configuration list for PBXNativeTarget "PTVHealthCheck" */;
 			buildPhases = (
+				F80BBD39031A87210538F99D /* [CP] Check Pods Manifest.lock */,
 				2F01F961219A742A0072EDB7 /* Sources */,
 				2F01F962219A742A0072EDB7 /* Frameworks */,
 				2F01F963219A742A0072EDB7 /* Resources */,
+				34A367D944679A023ED48065 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F01F985219A742B0072EDB7 /* Build configuration list for PBXNativeTarget "PTVHealthCheckTests" */;
 			buildPhases = (
+				F8D221D9FFE3925021B2BE0A /* [CP] Check Pods Manifest.lock */,
 				2F01F975219A742B0072EDB7 /* Sources */,
 				2F01F976219A742B0072EDB7 /* Frameworks */,
 				2F01F977219A742B0072EDB7 /* Resources */,
@@ -191,6 +226,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34A367D944679A023ED48065 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PTVHealthCheck/Pods-PTVHealthCheck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTVHealthCheck/Pods-PTVHealthCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80BBD39031A87210538F99D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTVHealthCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D221D9FFE3925021B2BE0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTVHealthCheckTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F01F961219A742A0072EDB7 /* Sources */ = {
@@ -358,6 +462,7 @@
 		};
 		2F01F983219A742B0072EDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9CDC081022621BA50F1FC6 /* Pods-PTVHealthCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +480,7 @@
 		};
 		2F01F984219A742B0072EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7362C263828BB9683AC33F9 /* Pods-PTVHealthCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +498,7 @@
 		};
 		2F01F986219A742B0072EDB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7751D1678E3DD385D619EB64 /* Pods-PTVHealthCheckTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +519,7 @@
 		};
 		2F01F987219A742B0072EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC80538BC9B8D3E88485DF95 /* Pods-PTVHealthCheckTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

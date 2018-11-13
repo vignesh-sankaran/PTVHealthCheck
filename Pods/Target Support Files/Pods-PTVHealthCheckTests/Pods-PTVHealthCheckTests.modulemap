@@ -1,0 +1,6 @@
+framework module Pods_PTVHealthCheckTests {
+  umbrella header "Pods-PTVHealthCheckTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

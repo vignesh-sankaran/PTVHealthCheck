@@ -10,6 +10,15 @@ import Foundation
 import Alamofire
 import CryptoSwift
 
+// Credit to Leo Dabus et al, retrieved 13 November 2018 from https://stackoverflow.com/a/27062664/5891072
+extension Formatter {
+    static let ISO8601: ISO8601DateFormatter = {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return formatter
+    }()
+}
+
 public class HealthCheckService: NSObject {
     let healthCheckURL: URL
     let developerID: String
@@ -31,20 +40,18 @@ public class HealthCheckService: NSObject {
     
     public func healthCheck(callback: () -> ()) {
         let _ = createURL()
-
-        // Call Alamofire
     }
     
-    private func createURL() -> String {
+    func createURL() -> String {
         let developerIDParam = URLQueryItem(name: "devid", value: developerID)
         var requestURL = URLComponents(url: healthCheckURL, resolvingAgainstBaseURL: false)!
         requestURL.queryItems = [developerIDParam]
         
         let hmacSignature = calculateHmac(baseURL: requestURL.string!)
-        let timestamp = generateTimestamp()
+        let timestamp = Formatter.ISO8601.string(from: Date())
         
         let hmacParam = URLQueryItem(name: "signature", value: hmacSignature)
-        let timestampParam = URLQueryItem(name: "", value: timestamp)
+        let timestampParam = URLQueryItem(name: "timestamp", value: timestamp)
         
         requestURL.queryItems = [developerIDParam, hmacParam, timestampParam]
         
@@ -62,11 +69,5 @@ public class HealthCheckService: NSObject {
         }
 
         return hmacBytes.toHexString()
-    }
-    
-    private func generateTimestamp() -> String {
-        // Create timestamp
-        // return timestamp
-        return ""
     }
 }

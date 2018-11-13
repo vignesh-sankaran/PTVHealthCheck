@@ -20,7 +20,10 @@ class HealthCheckServiceTests: XCTestCase {
         XCTAssertNotNil(hmac)
     }
     
-    public func testTimestampCreated() {
+    public func testURLCreated() {
+        let requestURL = healthCheckService.createURL()
+        let urlStruct = URL(string: requestURL)
         
+        XCTAssertNotNil(urlStruct)
     }
 }

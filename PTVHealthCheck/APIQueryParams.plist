@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeveloperID</key>
+	<string>1000649</string>
+	<key>SecurityKey</key>
+	<string>47235180-b369-11e5-a65e-029db85e733b</string>
+	<key>HealthCheckEndpoint</key>
+	<string>http://timetableapi.ptv.vic.gov.au/v2/healthcheck</string>
+</dict>
+</plist>

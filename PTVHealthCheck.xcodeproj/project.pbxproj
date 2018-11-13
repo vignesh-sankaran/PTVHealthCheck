@@ -12,7 +12,6 @@
 		2F01F96E219A742A0072EDB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01F96C219A742A0072EDB7 /* Main.storyboard */; };
 		2F01F970219A742B0072EDB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F01F96F219A742B0072EDB7 /* Assets.xcassets */; };
 		2F01F973219A742B0072EDB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F01F971219A742B0072EDB7 /* LaunchScreen.storyboard */; };
-		2F01F97E219A742B0072EDB7 /* PTVHealthCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01F97D219A742B0072EDB7 /* PTVHealthCheckTests.swift */; };
 		2F300708219A78EA009C7F9D /* HealthCheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F300707219A78EA009C7F9D /* HealthCheckService.swift */; };
 		2F30070A219A799F009C7F9D /* HealthCheckServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F300709219A799F009C7F9D /* HealthCheckServiceTests.swift */; };
 		2F30070C219A7B5F009C7F9D /* APIQueryParams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F30070B219A7B5F009C7F9D /* APIQueryParams.plist */; };
@@ -41,7 +40,6 @@
 		2F01F972219A742B0072EDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F01F974219A742B0072EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F01F979219A742B0072EDB7 /* PTVHealthCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTVHealthCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F01F97D219A742B0072EDB7 /* PTVHealthCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTVHealthCheckTests.swift; sourceTree = "<group>"; };
 		2F01F97F219A742B0072EDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F300707219A78EA009C7F9D /* HealthCheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckService.swift; sourceTree = "<group>"; };
 		2F300709219A799F009C7F9D /* HealthCheckServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckServiceTests.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		2F01F97C219A742B0072EDB7 /* PTVHealthCheckTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F01F97D219A742B0072EDB7 /* PTVHealthCheckTests.swift */,
 				2F01F97F219A742B0072EDB7 /* Info.plist */,
 				2F300709219A799F009C7F9D /* HealthCheckServiceTests.swift */,
 			);
@@ -248,12 +245,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PTVHealthCheck/Pods-PTVHealthCheck-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F30070A219A799F009C7F9D /* HealthCheckServiceTests.swift in Sources */,
-				2F01F97E219A742B0072EDB7 /* PTVHealthCheckTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

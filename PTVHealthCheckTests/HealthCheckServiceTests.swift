@@ -7,28 +7,20 @@
 //
 
 import XCTest
-@testable import HealthCheckService
+@testable import PTVHealthCheck
 
 class HealthCheckServiceTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let healthCheckService = HealthCheckService()
+    
+    public func testHmacCalculated() {
+        let developerID = "1111111"
+        let url = "http://timetableapi.ptv.vic.gov.au/v2/healthcheck?devid=\(developerID)"
+        let hmac = healthCheckService.calculateHmac(baseURL: url)
+        
+        XCTAssertNotNil(hmac)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    public func testTimestampCreated() {
+        
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

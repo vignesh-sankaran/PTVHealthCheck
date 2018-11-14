@@ -21,10 +21,10 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         loading = loadingDialog()
-        
         self.present(loading!, animated: true, completion: nil)
     }
     
+    // Credit to ylin0x81 and petesalt. Retrieved 14 November 2018 at https://stackoverflow.com/a/27034447/5891072
     func loadingDialog() -> UIAlertController {
         let loadingDialog = UIAlertController(title: "Loading", message: nil, preferredStyle: .alert)
         let spinner = UIActivityIndicatorView(frame: loadingDialog.view.frame)
@@ -37,7 +37,6 @@ class ViewController: UIViewController {
     }
     
     @objc func onSuccessfulAPIResponse() {
-        // Disable UIAlertController
         loading!.dismiss(animated: true, completion: nil)
         var yPosition: CGFloat = 100
         

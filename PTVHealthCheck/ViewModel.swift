@@ -43,7 +43,6 @@ class ViewModel {
         database = boolToText(value: JSONResponse["databaseOK"] as! Bool)
         
         NotificationCenter.default.post(name: .SuccessfulResponse, object: nil)
-        print("Variables have been initialised!")
     }
     
     func boolToText(value: Bool) -> String {

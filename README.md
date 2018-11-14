@@ -1,6 +1,6 @@
-#PTVHealthCheck
+# PTVHealthCheck
 
-![alt text](screenrecording.gif "Screen recording")
+![Screen recording](screencapture.gif "Screen recording")
 
 ## Overview
 

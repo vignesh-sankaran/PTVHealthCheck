@@ -14,14 +14,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load up spinner while waiting for response from API call
-        
-        
-        // Upon completion of API call, display results in view
-        
     }
-
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let loading = loadingDialog()
+        
+        self.present(loading, animated: true, completion: nil)
+    }
+    
+    func loadingDialog() -> UIAlertController {
+        let loadingDialog = UIAlertController(title: "Loading", message: nil, preferredStyle: .alert)
+        let spinner = UIActivityIndicatorView(frame: loadingDialog.view.frame)
+        spinner.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        loadingDialog.view.addSubview(spinner)
+        spinner.isUserInteractionEnabled = false
+        spinner.startAnimating()
+        
+        return loadingDialog
+    }
 }
-

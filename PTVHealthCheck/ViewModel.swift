@@ -9,7 +9,9 @@
 import Foundation
 import Alamofire
 
-
+extension Notification.Name {
+    static let SuccessfulResponse = NSNotification.Name("SuccessfulResponse")
+}
 
 class ViewModel {
     var clientClock: String?
@@ -40,6 +42,7 @@ class ViewModel {
         memcache = boolToText(value: JSONResponse["memcacheOK"] as! Bool)
         database = boolToText(value: JSONResponse["databaseOK"] as! Bool)
         
+        NotificationCenter.default.post(name: .SuccessfulResponse, object: nil)
         print("Variables have been initialised!")
     }
     

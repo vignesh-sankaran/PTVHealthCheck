@@ -15,6 +15,8 @@
 		2F300708219A78EA009C7F9D /* HealthCheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F300707219A78EA009C7F9D /* HealthCheckService.swift */; };
 		2F30070A219A799F009C7F9D /* HealthCheckServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F300709219A799F009C7F9D /* HealthCheckServiceTests.swift */; };
 		2F30070C219A7B5F009C7F9D /* APIQueryParams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F30070B219A7B5F009C7F9D /* APIQueryParams.plist */; };
+		2F30070E219AE747009C7F9D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30070D219AE747009C7F9D /* ViewModel.swift */; };
+		2F300710219AE767009C7F9D /* HealthCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30070F219AE767009C7F9D /* HealthCheckModel.swift */; };
 		504FF0495D121F634295B5AF /* Pods_PTVHealthCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D915BBBAB02C9C803032193 /* Pods_PTVHealthCheck.framework */; };
 		5F13CF4100756E3D3D283463 /* Pods_PTVHealthCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0651F26A4003D4EDFC70CAB6 /* Pods_PTVHealthCheckTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		2F300707219A78EA009C7F9D /* HealthCheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckService.swift; sourceTree = "<group>"; };
 		2F300709219A799F009C7F9D /* HealthCheckServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckServiceTests.swift; sourceTree = "<group>"; };
 		2F30070B219A7B5F009C7F9D /* APIQueryParams.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIQueryParams.plist; sourceTree = "<group>"; };
+		2F30070D219AE747009C7F9D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2F30070F219AE767009C7F9D /* HealthCheckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckModel.swift; sourceTree = "<group>"; };
 		5C9CDC081022621BA50F1FC6 /* Pods-PTVHealthCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheck/Pods-PTVHealthCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		7751D1678E3DD385D619EB64 /* Pods-PTVHealthCheckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheckTests/Pods-PTVHealthCheckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC80538BC9B8D3E88485DF95 /* Pods-PTVHealthCheckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTVHealthCheckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTVHealthCheckTests/Pods-PTVHealthCheckTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				2F01F974219A742B0072EDB7 /* Info.plist */,
 				2F300707219A78EA009C7F9D /* HealthCheckService.swift */,
 				2F30070B219A7B5F009C7F9D /* APIQueryParams.plist */,
+				2F30070D219AE747009C7F9D /* ViewModel.swift */,
+				2F30070F219AE767009C7F9D /* HealthCheckModel.swift */,
 			);
 			path = PTVHealthCheck;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F300710219AE767009C7F9D /* HealthCheckModel.swift in Sources */,
 				2F01F96B219A742A0072EDB7 /* ViewController.swift in Sources */,
 				2F300708219A78EA009C7F9D /* HealthCheckService.swift in Sources */,
+				2F30070E219AE747009C7F9D /* ViewModel.swift in Sources */,
 				2F01F969219A742A0072EDB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,8 +38,12 @@ public class HealthCheckService: NSObject {
         securityKey = APIQueryParams["SecurityKey"] as! String
     }
     
-    public func healthCheck(callback: () -> ()) {
-        let _ = createURL()
+    public func healthCheck(callback: @escaping (_ response: DataResponse<Any>) -> ()) {
+        let requestURL = createURL()
+        
+        Alamofire.request(requestURL).responseJSON { response in
+            callback(response)
+        }
     }
     
     func createURL() -> String {
